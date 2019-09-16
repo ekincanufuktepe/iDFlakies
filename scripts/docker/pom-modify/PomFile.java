@@ -386,7 +386,7 @@ public class PomFile {
           Node plugin = doc.createElement("plugin");
           {
               Node groupId = doc.createElement("groupId");
-              groupId.setTextContent("com.reedoei");
+              groupId.setTextContent("edu.illinois.cs");
               plugin.appendChild(groupId);
           }
           {
@@ -396,7 +396,7 @@ public class PomFile {
           }
           {
               Node version = doc.createElement("version");
-              version.setTextContent("0.1-SNAPSHOT");
+              version.setTextContent("1.0");
               plugin.appendChild(version);
           }
           {
@@ -409,11 +409,11 @@ public class PomFile {
                       dependency.appendChild(depGroupId);
 
                       Node depArtifactId = doc.createElement("artifactId");
-                      depArtifactId.setTextContent("dt-fixing-tools");
+                      depArtifactId.setTextContent("idflakies");
                       dependency.appendChild(depArtifactId);
 
                       Node depVersion = doc.createElement("version");
-                      depVersion.setTextContent("1.0.0-SNAPSHOT");
+                      depVersion.setTextContent("1.0.0");
                       dependency.appendChild(depVersion);
                   }
                   dependencies.appendChild(dependency);
